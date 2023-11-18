@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="w-full flex content-container ">
+    <section className="w-full flex content-container  justify-center items-center">
       <Image
         src={Banner[0].banner.image}
         width={1000}
