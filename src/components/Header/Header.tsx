@@ -4,14 +4,14 @@ import { C_Header } from ".";
 export default function Header() {
   return (
     <C_Header.Root>
-      <MenuMobile />
+      
       <C_Header.Logo
         src={"/logo.png"}
         width={133}
         height={60}
         alt="Logo Biosanté"
       />
-
+<MenuMobile />
       <C_Header.Nav>
         <C_Header.List>
           <C_Header.Item text={"Inicio"} />
