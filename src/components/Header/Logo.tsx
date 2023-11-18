@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 
-interface LogoProps {
+type LogoProps = {
   src: string;
   width: number;
   height: number;
   alt: string;
   style?: string;
-}
+};
 
 export default function Logo(props: LogoProps) {
   return (

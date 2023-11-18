@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
-interface HeaderRootProps {
+type HeaderRootProps = {
   children: ReactNode;
-}
+};
 
 export default function HeaderRoot({ children }: HeaderRootProps) {
   return (
