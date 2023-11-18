@@ -1,20 +1,26 @@
-import Image from "next/image";
 import MenuMobile from "./MenuMobile";
+import { C_Header } from ".";
 
 export default function Header() {
   return (
-    <header className="w-full h-20 flex justify-between  items-center px-8 md:justify-between md:px-6">
+    <C_Header.Root>
       <MenuMobile />
-      <Image src={"/logo.png"} width={133} height={60} alt="Logo Biosanté" />
-      <nav className=" w-auto  hidden md:block ">
-        <ul className=" flex list-none">
-          <li className="block mx-4 hover:cursor-pointer">Inicio</li>
-          <li className="block mx-4 hover:cursor-pointer">Produtos</li>
-          <li className="block mx-4 hover:cursor-pointer">Prescitos</li>
-          <li className="block mx-4 hover:cursor-pointer">Sobre</li>
-          <li className="block mx-4 hover:cursor-pointer">Estudos</li>
-        </ul>
-      </nav>
-    </header>
+      <C_Header.Logo
+        src={"/logo.png"}
+        width={133}
+        height={60}
+        alt="Logo Biosanté"
+      />
+
+      <C_Header.Nav>
+        <C_Header.List>
+          <C_Header.Item text={"Inicio"} />
+          <C_Header.Item text={"Produtos"} />
+          <C_Header.Item text={"Prescitos"} />
+          <C_Header.Item text={"Sobre"} />
+          <C_Header.Item text={"Estudos"} />
+        </C_Header.List>
+      </C_Header.Nav>
+    </C_Header.Root>
   );
 }
